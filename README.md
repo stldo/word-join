@@ -1,4 +1,4 @@
-# word-join
+# word-join [![npm][1]][2] [![minzipped size][3]][4]
 
 ## Installation
 
@@ -73,4 +73,8 @@ wordJoin(['pasta', 'sauce', 'cheese', 'wine'], { separator: ';' })
 
 [The MIT License][license]
 
+[1]: https://img.shields.io/npm/v/word-join
+[2]: https://www.npmjs.com/package/word-join
+[3]: https://img.shields.io/bundlephobia/minzip/word-join
+[4]: https://bundlephobia.com/package/word-join
 [license]: ./LICENSE
