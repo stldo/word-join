@@ -9,27 +9,27 @@ npm install word-join
 ## Usage
 
 ```js
-import wordJoin from 'word-join'
+import wordJoin from "word-join";
 
-wordJoin(['pasta', 'sauce', 'cheese', 'wine'])
+wordJoin(["pasta", "sauce", "cheese", "wine"]);
 // pasta, sauce, cheese and wine
 
-wordJoin(['pasta', 'sauce', 'cheese', 'wine'], {
-  conjunction: 'or'
-})
+wordJoin(["pasta", "sauce", "cheese", "wine"], {
+  conjunction: "or",
+});
 // pasta, sauce, cheese or wine
 
-wordJoin(['pasta', 'sauce', 'cheese', 'wine'], {
-  conjunction: 'or',
-  oxford: true
-})
+wordJoin(["pasta", "sauce", "cheese", "wine"], {
+  conjunction: "or",
+  oxford: true,
+});
 // pasta, sauce, cheese, or wine
 
-wordJoin(['pasta', 'sauce', 'cheese', 'wine'], {
-  conjunction: 'or',
+wordJoin(["pasta", "sauce", "cheese", "wine"], {
+  conjunction: "or",
   oxford: true,
-  separator: ';'
-})
+  separator: ";",
+});
 // pasta; sauce; cheese; or wine
 ```
 
@@ -37,12 +37,12 @@ wordJoin(['pasta', 'sauce', 'cheese', 'wine'], {
 
 ### conjunction
 
-Type: `string`. Default: `'and'`.
+Type: `string`. Default: `"and"`.
 
 The conjunction to join the last word of the sentence.
 
 ```js
-wordJoin(['pasta', 'sauce', 'cheese', 'wine'], { conjunction: 'or' })
+wordJoin(["pasta", "sauce", "cheese", "wine"], { conjunction: "or" });
 // pasta, sauce, cheese or wine
 ```
 
@@ -54,18 +54,18 @@ Whether to use an Oxford comma or not — i.e. a last comma before the
 conjunction.
 
 ```js
-wordJoin(['pasta', 'sauce', 'cheese', 'wine'], { oxford: true })
+wordJoin(["pasta", "sauce", "cheese", "wine"], { oxford: true });
 // pasta, sauce, cheese, and wine
 ```
 
 ### separator
 
-Type: `string`. Default: `','`.
+Type: `string`. Default: `","`.
 
 String to separate the list items.
 
 ```js
-wordJoin(['pasta', 'sauce', 'cheese', 'wine'], { separator: ';' })
+wordJoin(["pasta", "sauce", "cheese", "wine"], { separator: ";" });
 // pasta; sauce; cheese and wine
 ```
 
@@ -75,6 +75,6 @@ wordJoin(['pasta', 'sauce', 'cheese', 'wine'], { separator: ';' })
 
 [1]: https://img.shields.io/npm/v/word-join
 [2]: https://www.npmjs.com/package/word-join
-[3]: https://img.shields.io/bundlephobia/minzip/word-join
-[4]: https://bundlephobia.com/package/word-join
+[3]: https://img.shields.io/bundlejs/size/word-join
+[4]: https://bundlejs.com/?q=word-join
 [license]: ./LICENSE

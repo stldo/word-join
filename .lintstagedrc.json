@@ -1,0 +1,4 @@
+{
+  "**/*": "npm run lint",
+  "src/*.{ts,tsx}": "npm run lint:tsc"
+}
