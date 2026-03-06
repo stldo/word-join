@@ -1,8 +1,14 @@
 {
   "compilerOptions": {
-    "declarationDir": "dist",
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "declaration": true,
-    "target": "ESNext",
-    "strict": true
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedDeclarations": true,
+    "strict": true,
+    "skipLibCheck": true
   }
 }
