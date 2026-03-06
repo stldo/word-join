@@ -1,6 +1,6 @@
 {
   "name": "word-join",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "description": "Tiny module to join arrays with commas, \"and\", and Oxford comma support",
   "main": "./dist/index.cjs",
