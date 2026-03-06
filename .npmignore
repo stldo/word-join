@@ -1,5 +1,2 @@
-.eslintcache
-.eslintrc.json
-rollup.config.js
-src
-tsconfig.json
+**/*
+!dist/**/*
