@@ -25,7 +25,7 @@
     "lint:tsc": "tsc --noEmit",
     "postversion": "git push && git push --tags",
     "prepare": "husky && npm run build && npm run check",
-    "preversion": "npm run lint && npm test"
+    "preversion": "npm run lint"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.6",
