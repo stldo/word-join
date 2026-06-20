@@ -1,5 +1,10 @@
 # word-join [![npm][1]][2] [![minzipped size][3]][4]
 
+- Easily use the **Oxford comma** in any locale/language
+- Customize the **list separator** (e.g., `";"`) and **conjunction** (e.g., `"or"`)
+- **TypeScript-first** with built-in type definitions
+- **Zero dependencies** for a minimal bundle footprint
+
 ## Installation
 
 ```sh
