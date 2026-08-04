@@ -28,7 +28,7 @@
     "preversion": "npm run lint"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.6",
+    "@biomejs/biome": "2.4.6",
     "es-check": "^9.6.2",
     "husky": "^9.1.7",
     "lint-staged": "^16.3.2",
