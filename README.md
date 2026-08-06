@@ -1,4 +1,4 @@
-# word-join [![License][1]][license] [![npm][2]][3] [![minzipped size][4]][5]
+# word-join [![License][1]][license] [![Build status][2]][3] [![npm][4]][5] [![minzipped size][6]][7]
 
 - Easily use the **Oxford comma** in any locale or language
 - Customize the **list separator** (e.g., `";"`) and the **conjunction** (e.g., `"or"`)
@@ -81,8 +81,10 @@ wordJoin(["pasta", "sauce", "cheese", "wine"], { separator: ";" });
 Copyright (C) 2022-present stldo
 
 [1]: https://img.shields.io/github/license/stldo/word-join
-[2]: https://img.shields.io/npm/v/word-join
-[3]: https://www.npmjs.com/package/word-join
-[4]: https://img.shields.io/bundlejs/size/word-join
-[5]: https://bundlejs.com/?q=word-join
+[2]: https://img.shields.io/github/actions/workflow/status/stldo/word-join/validate.yml?branch=main
+[3]: https://github.com/stldo/word-join/actions/workflows/validate.js.yml
+[4]: https://img.shields.io/npm/v/word-join
+[5]: https://www.npmjs.com/package/word-join
+[6]: https://img.shields.io/bundlejs/size/word-join
+[7]: https://bundlejs.com/?q=word-join
 [license]: ./LICENSE
