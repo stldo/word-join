@@ -1,9 +1,9 @@
 # word-join [![License][1]][license] [![npm][2]][3] [![minzipped size][4]][5]
 
-- Easily use the **Oxford comma** in any locale/language
-- Customize the **list separator** (e.g., `";"`) and **conjunction** (e.g., `"or"`)
-- **TypeScript-first** with built-in type definitions
-- **Zero dependencies** for a minimal bundle footprint
+- Easily use the **Oxford comma** in any locale or language
+- Customize the **list separator** (e.g., `";"`) and the **conjunction** (e.g., `"or"`)
+- **TypeScript-first**, with built-in type definitions
+- **Zero dependencies**, for a minimal bundle footprint
 
 ## Installation
 
@@ -44,7 +44,7 @@ wordJoin(["pasta", "sauce", "cheese", "wine"], {
 
 Type: `string`. Default: `"and"`.
 
-The conjunction to join the last word of the sentence.
+The conjunction used to join the last item in the list.
 
 ```js
 wordJoin(["pasta", "sauce", "cheese", "wine"], { conjunction: "or" });
@@ -55,8 +55,7 @@ wordJoin(["pasta", "sauce", "cheese", "wine"], { conjunction: "or" });
 
 Type: `boolean`. Default: `false`.
 
-Whether to use an Oxford comma or not — i.e. a last comma before the
-conjunction.
+Whether to use an Oxford comma — i.e., a final comma before the conjunction.
 
 ```js
 wordJoin(["pasta", "sauce", "cheese", "wine"], { oxford: true });
@@ -67,7 +66,7 @@ wordJoin(["pasta", "sauce", "cheese", "wine"], { oxford: true });
 
 Type: `string`. Default: `","`.
 
-String to separate the list items.
+The string used to separate the list items.
 
 ```js
 wordJoin(["pasta", "sauce", "cheese", "wine"], { separator: ";" });
