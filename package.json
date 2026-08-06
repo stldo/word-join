@@ -1,6 +1,6 @@
 {
   "name": "word-join",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "stldo (https://github.com/stldo)",
   "description": "Join an array of strings into a human-readable list with a customizable conjunction, separator, and optional Oxford comma",
   "keywords": [
