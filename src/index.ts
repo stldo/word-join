@@ -1,4 +1,4 @@
-export default function wordJoin(
+export function wordJoin(
   words: unknown[] = [],
   options: {
     conjunction?: string;
@@ -10,7 +10,9 @@ export default function wordJoin(
 
   if (wordCount === 0) {
     return "";
-  } else if (wordCount === 1) {
+  }
+
+  if (wordCount === 1) {
     return `${words[0]}`;
   }
 

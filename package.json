@@ -1,42 +1,8 @@
 {
   "name": "word-join",
   "version": "1.0.0",
-  "type": "module",
+  "author": "stldo (https://github.com/stldo)",
   "description": "Join an array of strings into a human-readable list with a customizable conjunction, separator, and optional Oxford comma",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.cts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    },
-    "./package.json": "./package.json"
-  },
-  "scripts": {
-    "build": "tsdown",
-    "check": "npm run check:cjs && npm run check:mjs && npm run check:publint",
-    "check:cjs": "es-check es6 './dist/*.cjs'",
-    "check:mjs": "es-check es6 './dist/*.mjs' --module",
-    "check:publint": "publint",
-    "format": "biome check --no-errors-on-unmatched --write",
-    "lint": "npm run lint:tsc && npm run lint:biome",
-    "lint:biome": "biome check --no-errors-on-unmatched",
-    "lint:tsc": "tsc --noEmit",
-    "postversion": "git push && git push --tags",
-    "prepare": "husky && npm run build && npm run check",
-    "preversion": "npm run lint"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.4.6",
-    "es-check": "^9.6.4",
-    "husky": "^9.1.7",
-    "lint-staged": "^17.0.7",
-    "publint": "^0.3.21",
-    "tsdown": "^0.22.3",
-    "typescript": "^6.0.3"
-  },
-  "repository": "github:stldo/word-join",
   "keywords": [
     "and",
     "array",
@@ -56,6 +22,48 @@
     "text",
     "word"
   ],
-  "author": "stldo (https://github.com/stldo)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stldo/word-join.git"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.7",
+    "es-check": "^9.6.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "publint": "^0.3.23",
+    "tsdown": "^0.22.14",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.cts",
+  "scripts": {
+    "build": "tsdown",
+    "check": "npm run check:cjs && npm run check:mjs && npm run check:publint",
+    "check:cjs": "es-check es6 './dist/*.cjs'",
+    "check:mjs": "es-check es6 './dist/*.mjs' --module",
+    "check:publint": "publint",
+    "format": "biome check --no-errors-on-unmatched --write",
+    "lint": "biome check --no-errors-on-unmatched",
+    "postversion": "git push && git push --tags",
+    "prepack": "npm run validate",
+    "prepare": "husky",
+    "preversion": "npm run validate",
+    "typecheck": "tsc --noEmit",
+    "validate": "npm run typecheck && npm run lint && npm run build && npm run check"
+  }
 }

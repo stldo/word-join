@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.6/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.5.7/schema.json",
   "assist": {
     "enabled": true,
     "actions": {
@@ -21,12 +21,30 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "preset": "all",
+      "style": {
+        "noIncrementDecrement": "off",
+        "noTernary": "off",
+        "useDestructuring": "off"
+      }
     }
   },
   "vcs": {
     "clientKind": "git",
     "enabled": true,
     "useIgnoreFile": true
-  }
+  },
+
+  "overrides": [
+    {
+      "includes": ["*.config.ts", "*rc.mjs"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    }
+  ]
 }
