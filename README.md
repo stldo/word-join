@@ -2,6 +2,7 @@
 
 - Easily use the **Oxford comma** in any locale or language
 - Customize the **list separator** (e.g., `";"`) and the **conjunction** (e.g., `"or"`)
+- **ES6-compatible** for use in all modern environments
 - **TypeScript-first**, with built-in type definitions
 - **Zero dependencies**, for a minimal bundle footprint
 
